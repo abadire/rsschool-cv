@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5em;
+  width: 75%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#yellow-square {
+  width: 30em;
+  height: 30em;
+  background-color: #ffc933;
+  position: absolute;
+  z-index: -1;
+  align-self: flex-start;
+}
+
+img {
+  width: 25em;
+  margin: 10em 0 0 10em;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.emphasize {
+  color: #ffc933;
+}
+
+.contacts {
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+.contacts li {
+  display: inline-block;
+  margin: 0 .5em 0 .5em;
+}
+
+.contacts li:not(:last-child)::after {
+  content: "\007C";
+  display: inline-block;
+  margin-left: .9em;
+}
+
+article {
+  margin: 5em 5em 5em 10em;
+}
+
+article h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 2em;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.skills-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 20em 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.workplace {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workplace__info {
+  font-weight: 400;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.work-list {
+  list-style-position: inside;
+}
